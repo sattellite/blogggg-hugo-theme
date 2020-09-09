@@ -1,0 +1,12 @@
+name = "Blogggg"
+license = "MIT"
+licenselink = "https://github.com/sattellite/blogggg-hugo-theme/blob/master/LICENSE"
+description = "Minimalistic hugo theme for blog"
+homepage = ""
+tags = ["blog", "responsive", "minimal", "clean", "simple", "light", "fast", "flexbox"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Alexander Groshev"
+  homepage = "https://sattellite.me"

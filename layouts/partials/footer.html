@@ -1,0 +1,22 @@
+<footer>
+  <div class="icons">
+    {{ with .Site.Params.github }}
+      <a href="https://github.com/{{ . }}" alt="Link to my github profile" rel="noopener" target="_blank">
+        <img class="octicon" src="/images/github.svg">
+      </a>
+      {{ end }}
+      {{ with .Site.Params.email }}
+      <a href="mailto:{{ . }}" alt="Link to write me email" target="_blank">
+        <img class="octicon" src="/images/mail.svg">
+      </a>
+      {{ end }}
+      {{ with .Site.Params.telegram }}
+      <a href="tg://resolve?domain={{ . }}" alt="Link to write me in telegram" target="_blank">
+        <img class="octicon" src="/images/telegram.svg">
+      </a>
+      {{ end }}
+  </div>
+  <div class="copyright">
+    All content copyright {{ upper .Site.Title }} © 2013-{{ now.Format "2006"}} • All rights reserved.
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+        {{- partial "footer.html" . -}}
+
+        <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+        <script>document.addEventListener('DOMContentLoaded',()=>new Zooming({}).listen( 'main img' ));</script>
+    </body>
+</html>
