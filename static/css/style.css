@@ -360,3 +360,23 @@ twitter-widget,
 .twitter-tweet {
   margin: auto;
 }
+.show-on-focus {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.show-on-focus:focus {
+  z-index: 20;
+  width: auto;
+  height: auto;
+  clip: auto;
+}
+.skip-to-content {
+  position: absolute;
+  margin: 0;
+  color: #fff;
+  background-color: #0000ee;
+  padding: 1em;
+  top: 0;
+  left: 0;
+}
