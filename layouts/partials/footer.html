@@ -5,14 +5,19 @@
         <img class="octicon" src="/images/github.svg">
       </a>
       {{ end }}
-      {{ with .Site.Params.email }}
-      <a href="mailto:{{ . }}" alt="Link to write me email" target="_blank">
-        <img class="octicon" src="/images/mail.svg">
+      {{ with .Site.Params.twitter }}
+      <a href="https://twitter.com/{{ . }}" alt="Link to my twitter profile" rel="noopener" target="_blank">
+        <img class="octicon" src="/images/twitter.svg">
       </a>
       {{ end }}
       {{ with .Site.Params.telegram }}
       <a href="tg://resolve?domain={{ . }}" alt="Link to write me in telegram" target="_blank">
         <img class="octicon" src="/images/telegram.svg">
+      </a>
+      {{ end }}
+      {{ with .Site.Params.email }}
+      <a href="mailto:{{ . }}" alt="Link to write me email" target="_blank">
+        <img class="octicon" src="/images/mail.svg">
       </a>
       {{ end }}
   </div>
