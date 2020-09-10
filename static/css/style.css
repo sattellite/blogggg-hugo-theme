@@ -157,6 +157,11 @@ img {
   width: auto;
   height: auto;
 }
+p > img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .image-wrapper {
   display: flex;
   flex-grow: 1;
