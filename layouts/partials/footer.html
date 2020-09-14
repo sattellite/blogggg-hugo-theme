@@ -1,25 +1,25 @@
 <footer>
   <div class="icons">
     {{ with .Site.Params.github }}
-      <a href="https://github.com/{{ . }}" alt="Link to my github profile" rel="noopener" target="_blank">
-        <img class="octicon" src="/images/github.svg">
-      </a>
-      {{ end }}
-      {{ with .Site.Params.twitter }}
-      <a href="https://twitter.com/{{ . }}" alt="Link to my twitter profile" rel="noopener" target="_blank">
-        <img class="octicon" src="/images/twitter.svg">
-      </a>
-      {{ end }}
-      {{ with .Site.Params.telegram }}
-      <a href="tg://resolve?domain={{ . }}" alt="Link to write me in telegram" target="_blank">
-        <img class="octicon" src="/images/telegram.svg">
-      </a>
-      {{ end }}
-      {{ with .Site.Params.email }}
-      <a href="mailto:{{ . }}" alt="Link to write me email" target="_blank">
-        <img class="octicon" src="/images/mail.svg">
-      </a>
-      {{ end }}
+    <a href="https://github.com/{{ . }}" title="Link to my github profile" rel="noopener" target="_blank">
+      <img class="octicon" alt="github icon" src="/images/github.svg">
+    </a>
+    {{ end }}
+    {{ with .Site.Params.twitter }}
+    <a href="https://twitter.com/{{ . }}" title="Link to my twitter profile" rel="noopener" target="_blank">
+      <img class="octicon" alt="twitter icon" src="/images/twitter.svg">
+    </a>
+    {{ end }}
+    {{ with .Site.Params.telegram }}
+    <a href="tg://resolve?domain={{ . }}" title="Link to write me in telegram" target="_blank">
+      <img class="octicon" alt="telegram icon" src="/images/telegram.svg">
+    </a>
+    {{ end }}
+    {{ with .Site.Params.email }}
+    <a href="mailto:{{ . }}" title="Link to write me email" target="_blank">
+      <img class="octicon" alt="email icon" src="/images/mail.svg">
+    </a>
+    {{ end }}
   </div>
   <div class="copyright">
     All content copyright {{ upper .Site.Title }} © 2013-{{ now.Format "2006"}} • All rights reserved.
