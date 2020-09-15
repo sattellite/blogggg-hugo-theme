@@ -171,9 +171,13 @@ p > img {
   justify-content: center;
   width: 100%;
 }
-.octicon {
+.icon {
   display: inline-block;
   vertical-align: text-top;
+  width: 24px;
+  height: 24px;
+}
+.icon > svg {
   fill: currentColor;
   width: 24px;
   height: 24px;

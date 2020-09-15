@@ -9,26 +9,26 @@
       <span class="nav-icons">
         {{ with .Site.Params.github }}
         <a href="https://github.com/{{ . }}" title="Link to my github profile" rel="noopener" target="_blank">
-          <img class="octicon" alt="github icon" src="/images/github.svg">
+          <span class="icon">{{ readFile "themes/blogggg/static/images/github.svg" | safeHTML }}</span>
         </a>
         {{ end }}
         {{ with .Site.Params.twitter }}
         <a href="https://twitter.com/{{ . }}" title="Link to my twitter profile" rel="noopener" target="_blank">
-          <img class="octicon" alt="twitter icon" src="/images/twitter.svg">
+          <span class="icon">{{ readFile "themes/blogggg/static/images/twitter.svg" | safeHTML }}</span>
         </a>
         {{ end }}
         {{ with .Site.Params.telegram }}
         <a href="tg://resolve?domain={{ . }}" title="Link to write me in telegram" target="_blank">
-          <img class="octicon" alt="telegram icon" src="/images/telegram.svg">
+          <span class="icon">{{ readFile "themes/blogggg/static/images/telegram.svg" | safeHTML }}</span>
         </a>
         {{ end }}
         {{ with .Site.Params.email }}
         <a href="mailto:{{ . }}" title="Link to write me email" target="_blank">
-          <img class="octicon" alt="email icon" src="/images/mail.svg">
+          <span class="icon">{{ readFile "themes/blogggg/static/images/mail.svg" | safeHTML }}</span>
         </a>
         {{ end }}
         <a href="/index.xml" title="Link to RSS" target="_blank">
-          <img class="octicon" alt="rss icon" src="/images/rss.svg">
+          <span class="icon">{{ readFile "themes/blogggg/static/images/rss.svg" | safeHTML }}</span>
         </a>
       </span>
   </div>
