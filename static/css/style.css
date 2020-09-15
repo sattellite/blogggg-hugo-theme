@@ -47,7 +47,18 @@ body {
   flex-wrap: wrap;
 }
 .nav-right a {
-  padding-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-header .author {
+  text-align: center;
 }
 .row {
   display: flex;
@@ -224,10 +235,14 @@ footer {
 footer a {
   color: #fff;
   text-decoration: none;
-  padding-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
-footer a:first-child {
-  padding-left: 0;
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .copyright {
   font-size: 16px;
